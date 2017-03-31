@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Vanilla Vue2</title>
+		<style type="text/css">
+			.color-blue {color:blue;}
+			.color-red {color:red;}
+			.isRed {color:red;}
+		</style>
+	</head>
+
+	<body>
+
+		<h1>Vanilla Version</h1>
+		
+		<div id="root">
+
+		<div class="search-wrapper">
+
+			<input type="text" v-model="keyword" name="search" placeholder="Search...">
+
+		</div>
+
+			<div class="wrapper">
+
+				<div v-for="post in filterlist">
+
+					<img :src="post.img">
+					<a class="isRed" :href="post.link">{{post.title}}</a>
+					<p>{{post.body}}</p>
+
+				</div>
+
+			</div>
+
+		</div>
+	
+	</body>
+
+	<!-- Javascript must be placed here at the bottom of the page
+		so that all the HTML content will be processed fist by the browser
+		then procesed by the javascript -->
+
+	<!-- This Vue2 script package is pulled in remotely via a CDN -->
+	<script src="https://unpkg.com/vue" ></script>
+
+	<!-- This is your local javascript that will use Vue2 -->
+	<script src="onepage.js"></script>
+
+</html>
+
+

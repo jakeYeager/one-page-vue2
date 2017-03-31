@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>One Page Vue2</title>
+		<style type="text/css">
+			.color-blue {color:blue;}
+			.color-red {color:red;}
+			.isRed {color:red;}
+		</style>
+	</head>
+
+	<body>
+		
+		<div id="root">
+
+		<div class="search-wrapper">
+
+			<input type="text" v-model="keyword" name="search" placeholder="Search...">
+
+		</div>
+
+			<div class="wrapper">
+
+				<div v-for="post in filterlist">
+
+					<img :src="post.img">
+					<a class="isRed" :href="post.link">{{post.title}}</a>
+					<p>{{post.body}}</p>
+
+				</div>
+
+			</div>
+
+		</div>
+	
+	</body>
+
+	<script src="https://unpkg.com/vue" ></script>
+	<script src="onepage.js"></script>
+
+</html>
