@@ -8,40 +8,105 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-<div id="root">
-<section class="section">
-    <div class="container">
+	<body>
+	<div id="root">
 
-      <div class="columns">
-      <div class="column">
-      	<div class="search-wrapper">
+		<section class="section">
 
-			<input class="input is-medium" type="text" v-model="keyword" name="search" placeholder="Search...">
+		    <div class="container">
 
-		</div>
-      </div>
-      	<div class="column is-two-thirds">
-      		<h1 class="title">Posts</h1>
+		      <div class="columns">
 
-      		<div class="wrapper">
+			      <div class="column"> <!-- search column -->
 
-				<div v-for="post in filterlist">
+			      	<h3 class="title">Search Titles</h1>
+		      		<hr>
 
-					<img :src="post.img" height="64px" width="64px">
-					<a class="isRed" :href="post.link">{{post.title}}</a>
-					<p>{{post.body}}</p>
+					<input class="input is-medium" type="text" v-model="keyword" name="search" placeholder="Search...">
 
-				</div>
+			      </div>
 
+		      	<div class="column is-two-thirds"> <!-- post column -->
+
+		      		<h3 class="title">Posts</h1>
+		      		<hr>
+
+						<div v-for="post in filterlist">
+
+						<div class="box">
+
+							<article class="media">
+
+    							<div class="media-left">
+
+      								<figure class="image is-64x64">
+
+      									<img :src="post.img">
+
+      								</figure>
+
+  								</div>
+
+								<div class="media-content">
+
+						      		<div class="content">
+
+						      			<a class="isRed" :href="post.link">{{post.title}}</a>
+										<p>{{post.body}}</p>
+							        
+							        </div> <!-- end content -->
+							        <nav class="level is-mobile">
+
+								        <div class="level-left">
+
+							          		<a class="level-item">
+							            		<span class="icon is-small"><i class="fa fa-reply"></i></span>
+						          			</a>
+							          		<a class="level-item">
+								            	<span class="icon is-small"><i class="fa fa-retweet"></i></span>
+							          		</a>
+							          		<a class="level-item">
+								            	<span class="icon is-small"><i class="fa fa-heart"></i></span>
+							          		</a>
+
+								        </div> <!-- end level-left -->
+
+							      	</nav>
+
+						        </div> <!-- end media content -->
+
+				        	</article>
+							
+						</div> <!-- end box -->
+							
+						<br>
+
+						</div> <!-- end v-for loop area -->
+
+		  			</div> <!-- end Posts column -->
+
+				</div> <!-- end columns -->
+
+			</diz> <!-- end container -->
+
+		</section>
+
+	</div> <!-- end Vue2 root div-->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="content has-text-centered">
+				<p>
+					<strong>Footer</strong> which means you're at the bottom of the page.
+				</p>
+				<p>
+					<a class="icon" href="#">
+					  <i class="fa fa-diamond"></i>
+					</a>
+				</p>
 			</div>
-
-  		</div>
-	</div>
-	</diz>
-</section>
-
 		</div>
+	</footer>
 	
 	</body>
 

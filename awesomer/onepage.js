@@ -54,7 +54,7 @@ const app = new Vue({
 				'Last Post: Jaded zombies',
 				'https://google.com',
 				'Anptoght Author',
-				'#',
+				'https://unsplash.it/200',
 				'Jaded zombies acted quaintly but kept driving their oxen forward.'
 				)
 		]
