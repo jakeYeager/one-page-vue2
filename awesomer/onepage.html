@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>One Page Vue2</title>
-		<style type="text/css">
-			.color-blue {color:blue;}
-			.color-red {color:red;}
-			.isRed {color:red;}
-		</style>
-	</head>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>One Page Awesomer</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="root">
+<section class="section">
+    <div class="container">
 
-	<body>
-		
-		<div id="root">
+      <div class="columns">
+      <div class="column">
+      	<div class="search-wrapper">
 
-		<div class="search-wrapper">
-
-			<input type="text" v-model="keyword" name="search" placeholder="Search...">
+			<input class="input is-medium" type="text" v-model="keyword" name="search" placeholder="Search...">
 
 		</div>
+      </div>
+      	<div class="column is-two-thirds">
+      		<h1 class="title">Posts</h1>
 
-			<div class="wrapper">
+      		<div class="wrapper">
 
 				<div v-for="post in filterlist">
 
-					<img :src="post.img">
+					<img :src="post.img" height="64px" width="64px">
 					<a class="isRed" :href="post.link">{{post.title}}</a>
 					<p>{{post.body}}</p>
 
 				</div>
 
 			</div>
+
+  		</div>
+	</div>
+	</diz>
+</section>
 
 		</div>
 	

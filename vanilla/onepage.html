@@ -3,7 +3,9 @@
 	<head>
 
 		<!-- Page Title: find this on the page tab -->
-		<title>Vanilla Vue2</title>
+		<title>
+		Vanilla Vue2 App
+		</title>
 
 		<!-- Local styles. you can of course add a .css file here for cleaner interface -->
 		<style type="text/css">
@@ -17,7 +19,7 @@
 	<!-- Visible page content goes below here -->
 	<body>
 
-		<h1>Vanilla Version</h1>
+		<h1>Vanilla Version. Yay</h1>
 		
 		<div id="root"><!-- This is IMPORTANT! 
 		It is the root (main) container for the Vue2 script -->
@@ -40,7 +42,7 @@
 
 					<div> <!-- this is not really important, but will be the 'holder' for the post object item -->
 
-						<img :src="post.img"> <!-- this is bound to the img slot -->
+						<img :src="post.img" height="100px" width="64px"> <!-- this is bound to the img slot -->
 
 						<a class="isRed" :href="post.link">{{post.title}}</a>
 

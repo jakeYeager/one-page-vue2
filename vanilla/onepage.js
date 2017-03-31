@@ -15,10 +15,10 @@ const app = new Vue({
 		postlist: [
 		// constructed Post item
 		new Post(
-			'First Post',
+			'jalsdfljkasdf', // This is a comment
 			'https://google.com',
 			'An Author',
-			'https://vuejs.org/images/logo.png',
+			'Screenshot_2014-08-18-19-44-55.png',
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra euismod euismod. Nulla leo est, venenatis at fringilla eget, tincidunt sed justo. In efficitur dui odio, sit amet finibus sem hendrerit ut. Etiam vestibulum sem vel metus lobortis, vitae dictum metus sagittis. Nulla facilisi. '
 			),
 		new Post(
