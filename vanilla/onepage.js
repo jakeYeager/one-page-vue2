@@ -38,7 +38,7 @@ const app = new Vue({
 		postlist: [
 			// constructed Post item
 			new Post(
-				'jalsdfljkasdf', 		// this is the TITLE place in the class
+				'First Post! Yay!', 		// this is the TITLE place in the class
 				'https://google.com',	// this is the LINK place in the class
 				'An Author',			// this is the AUTHOR place in the class
 				'https://unsplash.it/200',	// this is the IMAGE place in the class
@@ -46,35 +46,35 @@ const app = new Vue({
 				),
 
 			new Post(
-				'Second Post',
+				'Second Post: Lorem',
 				'https://vuejs.org',
 				'Sammie Author',
-				'https://unsplash.it/200',
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra euismod euismod. Nulla leo est, venenatis at fringilla eget, tincidunt sed justo. In efficitur dui odio, sit amet finibus sem hendrerit ut. Etiam vestibulum sem vel metus lobortis, vitae dictum metus sagittis. Nulla facilisi. '
+				'img-200.jpg', // this is a local image in the same folder as the js script
+				'This has a local image. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra euismod euismod. Nulla leo est, venenatis at fringilla eget, tincidunt sed justo. In efficitur dui odio, sit amet finibus sem hendrerit ut. Etiam vestibulum sem vel metus lobortis, vitae dictum metus sagittis. Nulla facilisi. '
 				),
 
 			new Post(
-				'This Post',
+				'This Post: Crazy Fredrick',
 				'https://google.com',
 				'Bob Author',
 				'https://unsplash.it/200',
-				'Body text goes here.'
+				'Crazy Fredrick bought many very exquisite opal jewels.'
 				),
 
 			new Post(
-				'Another Post',
+				'Another Post: promptly judged',
 				'https://vuejs.org',
 				'Jane Author',
 				'https://unsplash.it/200',
-				'Body text goes here.'
+				'We promptly judged antique ivory buckles for the next prize.'
 				),
 
 			new Post(
-				'Last Post',
+				'Last Post: Jaded zombies',
 				'https://google.com',
 				'Anptoght Author',
 				'#',
-				'Body text goes here.'
+				'Jaded zombies acted quaintly but kept driving their oxen forward.'
 				)
 		]
 	},
