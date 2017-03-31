@@ -9,6 +9,18 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 	<body>
+
+	<section class="section">
+
+		    <div class="container">
+
+				<a class="button is-primary is-outlined" href="../index.html">
+					<i class="fa fa-fw fa-home"></i>Home
+					</a>
+
+		    </div>
+
+    </section>
 	<div id="root">
 
 		<section class="section">
@@ -19,26 +31,31 @@
 
 			      <div class="column"> <!-- search column -->
 
-			      	<h3 class="title">Search Titles</h1>
+			      	<h3 class="title">Search</h1>
 
 		      		<hr>
 
-		      		<p>
-		      			<input class="input is-medium" type="text" v-model="keyword" name="search" placeholder="Search...">
-		      		</p>
-					
-					<br>
+		      		<div class="field">
 
-					<p>
-						<a class="button is-primary is-outlined" href="../index.html">Home</a>
-					</p>
-					
+					  <p class="control has-icon">
+
+					    <input class="input is-medium" type="text" v-model="keyword" name="search" placeholder="Search titles...">
+
+					    <span class="icon">
+
+					      <i class="fa fa-search"></i>
+
+					    </span>
+
+					  </p>
+
+					</div>
 
 			      </div>
 
 		      	<div class="column is-two-thirds"> <!-- post column -->
 
-		      		<h3 class="title">Posts</h1>
+		      		<h3 class="title">Videos</h1>
 		      		<hr>
 
 						<div v-for="post in filterlist">
@@ -61,11 +78,12 @@
 
 						      		<div class="content">
 
-						      			<a :href="post.link">{{post.title}}</a>
-
-						      			<p><em>by {{post.author}}</em></p>
-
-										<p>{{post.body}}</p>
+						      			<h3 class="title is-3">
+							      			<a :href="post.link" target="_blank">
+							      				<i class="fa fa-fw fa-youtube"></i>{{post.title}}
+							      			</a>
+						      			</h3>
+						      			<p>on the <strong>{{post.author}}</strong> channel</p>
 							        
 							        </div> <!-- end content -->
 
