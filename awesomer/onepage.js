@@ -23,7 +23,7 @@ const app = new Vue({
 				'https://google.com',
 				'An Author',
 				'https://unsplash.it/200',
-				'Lorem ipsum dolor sit amet, consectetur.'
+				 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra euismod euismod. Nulla leo est, venenatis at fringilla eget, tincidunt sed justo. In efficitur dui odio, sit amet finibus sem hendrerit ut. Etiam vestibulum sem vel metus lobortis, vitae dictum metus sagittis. Nulla facilisi.'
 				),
 
 			new Post(
@@ -31,7 +31,7 @@ const app = new Vue({
 				'https://vuejs.org',
 				'Sammie Author',
 				'img-200.jpg',
-				'This has a local image. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra euismod euismod. Nulla leo est, venenatis at fringilla eget, tincidunt sed justo. In efficitur dui odio, sit amet finibus sem hendrerit ut. Etiam vestibulum sem vel metus lobortis, vitae dictum metus sagittis. Nulla facilisi. '
+				'This has a local image. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra euismod euismod. Nulla leo est, venenatis at fringilla eget, tincidunt sed justo. In efficitur dui odio, sit amet finibus sem hendrerit ut. Etiam vestibulum sem vel metus lobortis, vitae dictum metus sagittis. Nulla facilisi.'
 				),
 
 			new Post(
@@ -39,15 +39,15 @@ const app = new Vue({
 				'https://google.com',
 				'Bob Author',
 				'https://unsplash.it/200',
-				'Crazy Fredrick bought many very exquisite opal jewels.'
+				'Crazy Fredrick bought many very exquisite opal jewels. Lonsectetur adipiscing elit. Morbi viverra euismod euismod. Nulla leo est, venenatis at fringilla eget, tincidunt sed justo. In efficitur dui odio, sit amet finibus sem hendrerit ut. Etiam vestibulum sem vel metus lobortis, vitae dictum metus sagittis. Nulla facilisi.'
 				),
 
 			new Post(
-				'Another Post: promptly judged',
+				'Another Post: Promptly judged',
 				'https://vuejs.org',
 				'Jane Author',
 				'https://unsplash.it/200',
-				'We promptly judged antique ivory buckles for the next prize.'
+				'We promptly judged antique ivory buckles for the next prize. Adipiscing elit. Morbi viverra euismod euismod. Nulla leo est, venenatis at fringilla eget, tincidunt sed justo. In efficitur dui odio, sit amet finibus sem hendrerit ut. Etiam vestibulum sem vel metus lobortis, vitae dictum metus sagittis. Nulla facilisi.'
 				),
 
 			new Post(
@@ -55,7 +55,7 @@ const app = new Vue({
 				'https://google.com',
 				'Anptoght Author',
 				'https://unsplash.it/200',
-				'Jaded zombies acted quaintly but kept driving their oxen forward.'
+				'Jaded zombies acted quaintly but kept driving their oxen forward. Morbi viverra euismod euismod. Nulla leo est, venenatis at fringilla eget, tincidunt sed justo. In efficitur dui odio, sit amet finibus sem hendrerit ut. Etiam vestibulum sem vel metus lobortis, vitae dictum metus sagittis. Nulla facilisi.'
 				)
 		]
 	},

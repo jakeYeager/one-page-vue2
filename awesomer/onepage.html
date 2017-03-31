@@ -20,9 +20,19 @@
 			      <div class="column"> <!-- search column -->
 
 			      	<h3 class="title">Search Titles</h1>
+
 		      		<hr>
 
-					<input class="input is-medium" type="text" v-model="keyword" name="search" placeholder="Search...">
+		      		<p>
+		      			<input class="input is-medium" type="text" v-model="keyword" name="search" placeholder="Search...">
+		      		</p>
+					
+					<br>
+
+					<p>
+						<a class="button is-primary is-outlined" href="../index.html">Home</a>	
+					</p>
+					
 
 			      </div>
 
@@ -51,10 +61,14 @@
 
 						      		<div class="content">
 
-						      			<a class="isRed" :href="post.link">{{post.title}}</a>
+						      			<a :href="post.link">{{post.title}}</a>
+
+						      			<p><em>by {{post.author}}</em></p>
+
 										<p>{{post.body}}</p>
 							        
 							        </div> <!-- end content -->
+
 							        <nav class="level is-mobile">
 
 								        <div class="level-left">
@@ -97,7 +111,7 @@
 		<div class="container">
 			<div class="content has-text-centered">
 				<p>
-					<strong>Footer</strong> which means you're at the bottom of the page.
+					<strong>Footer</strong> which means this is the bottom of the page.
 				</p>
 				<p>
 					<a class="icon" href="#">
