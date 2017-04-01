@@ -8,6 +8,30 @@ Used the basic code from [Dev Coffee](https://www.youtube.com/channel/UCqr-7GDVT
 
 Main CSS is [Bulma](http://bulma.io/documentation/overview/start/) but links to others on the index.html
 
+----
+
 ## Other Resources
 
-Web development code writing Best Practices [Code Guide](http://codeguide.co/)
+* [Code Guide](http://codeguide.co/): Best practices for writing clear, clean code.
+
+### JS Frameworks
+
+* [Vue2](https://vuejs.org/)
+
+### CSS Frameworks
+
+* [Bootstrap](http://getbootstrap.com/getting-started/)
+* [Materialize](http://materializecss.com/)
+* [Bulma](http://bulma.io/)
+
+### Icons
+
+* [Font-Awesome](http://fontawesome.io/icons/)
+
+### Placeholder Images
+
+* [Unsplash](https://unsplash.it/)
+
+### Markdown
+
+* [Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
