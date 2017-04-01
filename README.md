@@ -8,8 +8,6 @@ Used the basic code from [Dev Coffee](https://www.youtube.com/channel/UCqr-7GDVT
 
 Main CSS is [Bulma](http://bulma.io/documentation/overview/start/) but links to others on the index.html
 
-----
-
 ## Other Resources
 
 * [Code Guide](http://codeguide.co/): Best practices for writing clear, clean code.
@@ -28,9 +26,13 @@ Main CSS is [Bulma](http://bulma.io/documentation/overview/start/) but links to 
 
 * [Font-Awesome](http://fontawesome.io/icons/)
 
-### Placeholder Images
+### Placeholders
 
-* [Unsplash](https://unsplash.it/)
+* [Lipsum](http://www.lipsum.com/ for dummy text
+* [Blindtextgenerator](http://www.blindtextgenerator.com/lorem-ipsum) if you're bored of lorem. Perish the thought...
+* [Baconipum](https://baconipsum.com/) if you're really, actually super bored of lorum and not vegan.
+* [Unsplash](https://unsplash.it/) for images
+* [Lorempixel](http://lorempixel.com/) for images
 
 ### Markdown
 
