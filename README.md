@@ -37,3 +37,5 @@ Main CSS is [Bulma](http://bulma.io/documentation/overview/start/) but links to 
 ### Markdown
 
 * [Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+![desktop-gif](https://media.giphy.com/media/fwxPSNMdhCEvu/giphy.gif)
