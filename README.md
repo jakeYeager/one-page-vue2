@@ -6,7 +6,7 @@ App has a search function that filters over a list of hard-coded data values.
 
 Used the basic code from [Dev Coffee](https://www.youtube.com/channel/UCqr-7GDVTsdNBCeufvERYuw) in this [video tut](https://youtu.be/VPUdtEf3oXI)
 
-Main CSS is [Bulma](http://bulma.io/documentation/overview/start/) but links to others on the index.html
+The CSS frameworks demo-ed are [Bulma](http://bulma.io/documentation/overview/start/) and [Bootstrap](http://getbootstrap.com/getting-started/).
 
 ## Resources and References
 
