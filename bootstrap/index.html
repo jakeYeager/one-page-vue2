@@ -31,7 +31,7 @@
 
 
 
-		<h1>Bootstrap Version. Yippy</h1>
+		<h1>Bootstrap Version. Woop woop</h1>
 
 			<a href="../index.html">
 				<button class="btn btn-default">
@@ -40,60 +40,52 @@
 			</a>
 
 			<br>
+
 			<hr>
 
 		<div id="root"><!-- This is IMPORTANT!
 		It is the root (main) container for the Vue2 script -->
 
-		<div class="col-md-4">
+		<div class="col-md-4"> <!-- page left -->
 
-			<div class="search-wrapper">
-			<!-- this 'wrapper' is just a container, not really important unless
-			you want to use it for styling the input -->
+			<input class="form-control input-lg" type="text" v-model="keyword" name="search" placeholder="Search..."> <!-- This is IMPORTANT!
+			It is the binding to the Vue2 model that processes the data -->
 
-				<input class="form-control input-lg" type="text" v-model="keyword" name="search" placeholder="Search..."> <!-- This is IMPORTANT!
-				It is the binding to the Vue2 model that processes the data -->
+			<div class="help-block">Type keyword search terms</div>
 
-			</div>
+		</div> <!-- end page left -->
 
-		</div>
+		<div class="col-md-8"> <!-- page right -->
 
-		<div class="col-md-8">
+			<div v-for="post in filterlist"> <!-- This is IMPORTANT!
+			It is the 'for' loop, or machine that cycles over the data -->
 
-			<div class="wrapper">
-			<!-- this 'wrapper' is just a container, not really important unless
-			you want to use it for styling data -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
 
-				<div v-for="post in filterlist"> <!-- This is IMPORTANT!
-				It is the 'for' loop, or machine that cycles over the data -->
+						<h3><a class="isRed" :href="post.link">{{post.title}}</a></h3>
 
-					<div class="panel panel-default">
-						<div class="panel-heading">
+					</div>
+					<div class="panel-body">
 
-							<h3><a class="isRed" :href="post.link">{{post.title}}</a></h3>
+						<img class="img-circle" :src="post.img"> <!-- this is bound to the img slot -->
+						<h4><em>by {{post.author}}</em></h4>
 
-						</div>
-						<div class="panel-body">
-
-							<img class="img-circle" :src="post.img"> <!-- this is bound to the img slot -->
-							<h4><em>by {{post.author}}</em></h4>
-
-							<p>{{post.body}}</p> <!-- this is bound to the body slot -->
-
-						</div>
-
+						<p>{{post.body}}</p> <!-- this is bound to the body slot -->
 
 					</div>
 
-				</div>
+				</div> <!-- end panel -->
 
-			</div>
+			</div> <!-- end filterlist -->
 
-		</div>
+		</div> <!-- end page right -->
 
-		</div>
-	</div>
-	</body>
+	</div>  <!-- end root div -->
+
+</div> <!-- end page container -->
+
+</body>
 
 	<!-- Javascript must be placed here at the bottom of the page
 		so that all the HTML content will be processed fist by the browser
