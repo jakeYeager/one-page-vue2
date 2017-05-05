@@ -26,22 +26,36 @@
 
 	<!-- Visible page content goes below here -->
 	<body>
+			<div class="container-fluid">
 
-		<h1>Bootstrap Version. Yay</h1>
 
-		<a href="../index.html"><h3>Back Home</h3></a>
+
+		<h1>Bootstrap Version. Yippy</h1>
+
+			<a href="../index.html">
+				<button class="btn btn-default">Back Home</button>
+			</a>
+
+			<br>
+			<hr>
 
 		<div id="root"><!-- This is IMPORTANT!
 		It is the root (main) container for the Vue2 script -->
 
-		<div class="search-wrapper">
-		<!-- this 'wrapper' is just a container, not really important unless
-		you want to use it for styling the input -->
+		<div class="col-md-4">
 
-			<input type="text" v-model="keyword" name="search" placeholder="Search..."> <!-- This is IMPORTANT!
-			It is the binding to the Vue2 model that processes the data -->
+			<div class="search-wrapper">
+			<!-- this 'wrapper' is just a container, not really important unless
+			you want to use it for styling the input -->
+
+				<input class="form-control input-lg" type="text" v-model="keyword" name="search" placeholder="Search..."> <!-- This is IMPORTANT!
+				It is the binding to the Vue2 model that processes the data -->
+
+			</div>
 
 		</div>
+
+		<div class="col-md-8">
 
 			<div class="wrapper">
 			<!-- this 'wrapper' is just a container, not really important unless
@@ -50,15 +64,21 @@
 				<div v-for="post in filterlist"> <!-- This is IMPORTANT!
 				It is the 'for' loop, or machine that cycles over the data -->
 
-					<div> <!-- this is not really important, but will be the 'holder' for the post object item -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
 
-						<img :src="post.img"> <!-- this is bound to the img slot -->
+							<h3><a class="isRed" :href="post.link">{{post.title}}</a></h3>
 
-						<a class="isRed" :href="post.link">{{post.title}}</a>
+						</div>
+						<div class="panel-body">
 
-						<p><em>by {{post.author}}</em></p>
+							<img class="img-circle" :src="post.img"> <!-- this is bound to the img slot -->
+							<h4><em>by {{post.author}}</em></h4>
 
-						<p>{{post.body}}</p> <!-- this is bound to the body slot -->
+							<p>{{post.body}}</p> <!-- this is bound to the body slot -->
+
+						</div>
+
 
 					</div>
 
@@ -68,6 +88,8 @@
 
 		</div>
 
+		</div>
+	</div>
 	</body>
 
 	<!-- Javascript must be placed here at the bottom of the page
