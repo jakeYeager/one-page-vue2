@@ -11,8 +11,7 @@ class Post {
 				link,
 				author,
 				img,
-				body
-					){
+				body){
 					this.title = title;
 					this.link = link;
 					this.author = author;
