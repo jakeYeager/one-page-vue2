@@ -87,7 +87,7 @@ const app = new Vue({
 
 			// filterlist object
 			// returns a filter funtion over the constructed post
-			return this.postlist.filter((post)=>{
+			return this.postlist.filter((post) => {
 
 				// of an inculded array of title-toLowerCase matching any keyword-toLowerCase returned
 				return post.title.toLowerCase().includes(this.keyword.toLowerCase());
