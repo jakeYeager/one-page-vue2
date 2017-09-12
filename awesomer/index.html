@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>One Page Awesomer</title>
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css">-->
+    <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="./css/bulma.0.4.0.css">
+    <link rel="stylesheet" href="./css/font-awesome.4.7.0.min.css">
 </head>
+
 	<body>
-	<div id="root">
+
+    <div id="root">
 
 		<section class="section">
 
@@ -19,7 +23,7 @@
 
 			      <div class="column"> <!-- search column -->
 
-			      	<h3 class="title">Search Titles</h1>
+			      	<h3 class="title">Search Titles</h3>
 
 		      		<hr>
 
@@ -38,7 +42,8 @@
 
 		      	<div class="column is-two-thirds"> <!-- post column -->
 
-		      		<h3 class="title">Posts</h1>
+                    <h3 class="title">Posts</h3>
+
 		      		<hr>
 
 						<div v-for="post in filterlist">
@@ -101,7 +106,7 @@
 
 				</div> <!-- end columns -->
 
-			</diz> <!-- end container -->
+			</div> <!-- end container -->
 
 		</section>
 
@@ -124,7 +129,11 @@
 	
 	</body>
 
-	<script src="https://unpkg.com/vue" ></script>
+    <!--uncomment the below for CDN -->
+    <!--<script src="https://unpkg.com/vue" ></script>-->
+
+    <!--this are locally served-->
+    <script src="./js/vue.2.4.2.js"></script>
 	<script src="awesome.js"></script>
 
 </html>
