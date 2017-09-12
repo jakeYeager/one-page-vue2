@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
 
-		<!-- Page Title: find this on the page tab -->
-		<title>
-		Bootstrap Vue2 App
-		</title>
+	<!-- Page Title: find this on the page tab -->
+	<title>Bootstrap Vue2 App</title>
 
-		<meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-	  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-	  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Uncomment for CDN-->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">-->
+
+    <link rel="stylesheet" href="./css/bootstrap.3.3.7.css">
+    <link rel="stylesheet" href="./css/font-awesome.4.7.0.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 
 		<!-- Local styles. you can of course add a .css file here for cleaner interface -->
 		<style type="text/css">
@@ -27,11 +30,11 @@
 
 	<!-- Visible page content goes below here -->
 	<body>
-			<div class="container-fluid">
+
+		<div class="container-fluid">
 
 
-
-		<h1>Bootstrap Version. Woop woop</h1>
+			<h1>Bootstrap Version. Woop woop</h1>
 
 			<a href="../index.html">
 				<button class="btn btn-default">
@@ -89,12 +92,17 @@
 
 	<!-- Javascript must be placed here at the bottom of the page
 		so that all the HTML content will be processed fist by the browser
-		then procesed by the javascript -->
+		then processed by the javascript -->
 
-	<!-- This Vue2 script package is pulled in remotely via a CDN -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://unpkg.com/vue" ></script>
+	<!-- This these resource script packages are pulled in remotely via a CDN -->
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>-->
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <!--<script src="https://unpkg.com/vue" ></script>-->
+
+    <!--this are locally served resource js-->
+    <script src="js/jquery.3.2.0.min.js"></script>
+    <script src="js/bootstrap.3.3.7.min.js"></script>
+    <script src="js/vue.2.4.2.js"></script>
 
 	<!-- This is your local javascript that will use Vue2 -->
 	<script src="bootstrap.js"></script>
